@@ -8,17 +8,14 @@ public class SampleObject {
     @SerializedName("name")
     private String mName;
 
-    @SerializedName("ethnicity2") // using GSON
-    private String mEthnicity3;
-
-    @JsonProperty("jacksonTestContributorNameBLAH")
-    private String mJacksonContributorName = "DEFAULT_CONTRIBUTOR_NAME";
-
+    @SerializedName("ethnicity") // using GSON
+    private String mEthnicity;
+    
     public SampleObject() {}
 
     public SampleObject(String name, String ethnicity3) {
         mName = name;
-        mEthnicity3 = ethnicity3;
+        mEthnicity = ethnicity3;
     }
 
     public String getName() {
@@ -29,11 +26,11 @@ public class SampleObject {
         mName = name;
     }
 
-    public String getEthnicity3() {
-        return mEthnicity3;
+    public String getEthnicity() {
+        return mEthnicity;
     }
 
-    public void setEthnicity3(String ethnicity3) {
-        mEthnicity3 = ethnicity3;
+    public void setEthnicity(String ethnicity) {
+        mEthnicity = ethnicity;
     }
 }
